@@ -39,18 +39,33 @@
 	background-color: inherit;
 }
 .main_menu{
-	background-color: #3c3f44;
-	color: white;
+	color: black;
+	
 }
 .btn{
-	background-color: inherit;
-	color: white;
+	min-height: 50px;
+	display: block;
+	background-color: white;
+	color: inherit;
 	width: 100%;
-	min-height: 40px;
+	text-align: center;
+	border: 2px solid rgba(60,63,68, .1);
+	-webkit-transition-duration:0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
+.btn:hover{
+	background-color: #cc5556;
+	color: white;
+}
+
 .pro-pic{
 	max-width: 100%;
 	float:left;
+	margin-top: 5px;
+}
+.img-circle{
+	border-radius: 10%;
 }
 .h1-heading{
 	text-align: left;
@@ -77,8 +92,34 @@ table{
 	text-align: center;
 	padding-left: 20px;
 	border-collapse: collapse;
+	border-bottom: 2px solid lightgray; /* separate row data with thicker line */
+    margin-top: 5px;
+}
+tr{
+	border-bottom: 2px solid lightgray; /* separate row data with thicker line */
+    margin-top: 5px;
 }
 .table-class{
 	padding-left: 20px;
 	text-align: center;
+}
+progress[value]{
+	/*Reset the default apprearance */
+	-webkit-appearance:none;
+	appearance:none;
+
+	width: 90%;
+	height: 20px;
+}
+progress[value]::-webkit-progress-bar {
+	background-color: #eee;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+	background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.1) 66%, transparent 66%),
+	-webkit-linear-gradient(top,rgba(255,255,255,0.25),rgba(0,0,0,0.25)),
+	-webkit-linear-gradient(left,#f44,#cc5556);
+	border-radius: 2px;
+	background-size: 35px 20px,100% 100%,100% 100%;
 }
