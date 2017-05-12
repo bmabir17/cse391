@@ -108,10 +108,18 @@
 					<hr>
 					<div class="col-md-12">
 						<h4 style="margin-left:20px">Python</h4>
-						<progress style="margin-left:20px" value="9.0" max="10.0">
+						<progress style="margin-left:20px" value="8.0" max="10.0">
+					</div>
+					<div class="col-md-12">
+						<h4 style="margin-left:20px">SQL</h4>
+						<progress style="margin-left:20px" value="6.0" max="10.0">
 					</div>
 					<div class="col-md-12">
 						<h4 style="margin-left:20px">JavaScript</h4>
+						<progress style="margin-left:20px" value="4.0" max="10.0">
+					</div>
+					<div class="col-md-12">
+						<h4 style="margin-left:20px">Arduino</h4>
 						<progress style="margin-left:20px" value="9.0" max="10.0">
 					</div>
 				</div>
@@ -178,14 +186,14 @@
 										</div>
 										<div class="col-md-12">
 											<p class="col-md-9">
-												Currently studying for undergraduate program in CSE. Took courses like introduction to database systems, Computer Architecture, <a href="https://piazza.com/">Programing for the internet</a>  and Artificial Intelligence.
+												Currently studying for undergraduate program in CSE. Took courses like introduction to database systems, Computer Architecture, <a target="_blank" href="https://piazza.com/">Programing for the internet</a>  and Artificial Intelligence.
 											</p>
 										</div>
 									</li>
 								</div>
 								<div class="col-md-12">
 									<li>
-										<h4><a class="a-link edu-title" target="_blank" href="#"> Wills Little Flower Higher Secondary School</a></h4>
+										<h4><a class="a-link edu-title" target="_self" href="#"> Wills Little Flower Higher Secondary School</a></h4>
 										<div class="col-md-12">
 											<div class="col-md-9">
 												<p class="p-exp-subTitle">O Levels & A Levels</p>
@@ -208,11 +216,116 @@
 				</div>
 				
 			</div>
+			<div>
+				<div class="col-md-12">
+					<h3 class="h3-heading h3-line-brk">Projects</h3>
+					<hr>
+					<div class="div-work">
+						<button class="btn-work"><i class="fa fa-cog"></i></button>
+					</div>
+					<div class="div-work">
+						<div>
+							<ul>
+								<div class="col-md-12">
+									<li>
+										<h4><a class="a-link" target="_blank" href="http://robu-lab.org/mongoltori"> Mongol Tori</a></h4>
+										<div class="col-md-12">
+											<div class="col-md-9">
+												<p class="p-exp-subTitle">A Mars Rover Project by BRAC University</p>
+											</div>
+											<div class="col-md-2">
+												<p class="p-exp-subTitle">2015-2016</p>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<p class="col-md-9">
+												I was the lead Software Developer for the Mars rover Robot. It had the capability of working remotely by communicating with the control station and used GPS to track the location of its terrain traversing. 
+											</p>
+										</div>
+									</li>
+								</div>
+								<div class="col-md-12">
+									<li>
+										<h4><a class="a-link edu-title" target="_self" href="#"> RFID DoorLock with WebApp</a></h4>
+										<div class="col-md-12">
+											<div class="col-md-9">
+												<p class="p-exp-subTitle">An access Control System for ROBU</p>
+											</div>
+											<div class="col-md-2">
+												<p class="p-exp-subTitle">2014-2015</p>
+											</div>
+										</div>
+										<div class="col-md-12">
+										<p>
+											<ul>
+												<li>Members Management</li>
+												<li>RFID card Database</li>
+											</ul>
+										</p>
+									</div>
+									</li>
+								</div>
+								<div class="col-md-12">
+									<li>
+										<h4>
+											<a class="a-link edu-title" target="_blank" href="http://abir.robu-lab.org/portfolios/universityconsult/">		pre-University Consultation System
+											</a>
+										</h4>
+										<div class="col-md-12">
+											<div class="col-md-9">
+												<p class="p-exp-subTitle">A Self-Assessment Software for college grad. Students</p>
+											</div>
+											<div class="col-md-2">
+												<p class="p-exp-subTitle">2015</p>
+											</div>
+										</div>
+										<div class="col-md-12">
+										<p>
+											<ul>
+												<li>Student Self-Help</li>
+												<li>Finds what to study in university</li>
+												<li>Communicates with professors</li>
+											</ul>
+										</p>
+									</div>
+									</li>
+								</div>
+								<div class="col-md-12">
+									<li>
+										<h4>
+											<a class="a-link edu-title" target="_blank" href="http://abir.robu-lab.org/portfolios/smartdoorlock/">		Smart DoorLock
+											</a>
+										</h4>
+										<div class="col-md-12">
+											<div class="col-md-9">
+												<p class="p-exp-subTitle">App to control your door from any location</p>
+											</div>
+											<div class="col-md-2">
+												<p class="p-exp-subTitle">2015</p>
+											</div>
+										</div>
+										<div class="col-md-12">
+										<p>
+											<ul>
+												<li>Android Control</li>
+												<li>DoorLock</li>
+											</ul>
+										</p>
+									</div>
+									</li>
+								</div>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
 			
 		</div>
 		<div class="col-md-12">
 			<div class="col-md-7">
-				<p id="credit">Powered By BlueShpereIt</p>
+				<p id="credit">Powered By BlueSphereIt</p>
 			</div>
 			<div class="col-md-5">
 				<p id="showModDate"></p>
