@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="navBar.css">
+	<link rel="stylesheet" type="text/css" href="tab.css">
+	<link rel="stylesheet" type="text/css" href="assignment2.css">
+	<script type="text/javascript" src="tab.js"></script>
+	<script type="text/javascript" src="assignment2.js"></script>
+</head>
+<body>
+	<div class="">
+		<ul class="nav-ul ">
+			<li class="nav-li" style="float:left;">
+				<a style="text-decoration:bold; font-size: 27px; padding-bottom: 8px; " class="nav-a" href="">BM ABIR</a>
+			</li>
+			<li class="nav-li">
+				<a class="nav-a" href="">Contacts</a>
+			</li>
+			<li class="nav-li">
+				<a class=" nav-a active">Assignments</a>
+			</li>
+			<li class="nav-li">
+				<a class="nav-a" href="">Blog</a>
+			</li>
+			<li class="nav-li">
+				<a class="nav-a" href="">Portfolio</a>
+			</li>
+			<li class="nav-li">
+				<a class="nav-a" href="">Publications</a>
+			</li>
+			<li class="nav-li">
+				<a class="nav-a " href="">Projects</a>
+			</li>
+			<li class="nav-li ">
+				<a class="nav-a " href="">Home</a>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+
+		<div class="content-body">
+			<div class="content">
+				<h1>CSE 391 Assignment 2</h1>
+				<div class="tab">
+					<button class="tablinks" onclick="openTask(event, 'Task1')">Task1 - Random Quote</button>
+					<button class="tablinks" onclick="openTask(event, 'Task2')">Task2 - Hero Converter</button>
+					<button class="tablinks" onclick="openTask(event, 'Task3')">Task3 - Max_Min</button>
+					<button class="tablinks" onclick="openTask(event, 'Task4');">Task4 - Magic</button>
+				</div>
+				<dir id="Task1" class="tabcontent">
+					<h3>Task1</h3>
+					<div class="assignment-body">
+						
+					</div>
+					<div class="assignment-footer" id="footer">
+						<div class="col-md-3">
+							<p>Powered by BluesphereIt</p>
+						</div>
+						<div class="col-md-9 ">
+							<div class="col-md-10">
+								<p id="quoteBox">Powered by BluesphereIt</p>
+							</div>
+							<div class="col-md-2" style="">
+								<div>
+									<button style="background-color:#33373D; width:30px; height:30px; " onclick="footerColor(event, '#33373D')"></button>
+									<button style="background-color:green; width:30px; height:30px; "onclick="footerColor(event, 'green')"></button>
+								</div>
+								<div>
+									<button style="background-color:#CCCCCC; width:30px; height:30px; " onclick="footerColor(event, '#CCCCCC')"></button>
+									<button style="background-color:#CC5556; width:30px; height:30px; "onclick="footerColor(event, '#CC5556')"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</dir>
+				<dir id="Task2" class="tabcontent">
+					<h3>Task2</h3>
+					<div class="assignment-body">
+						<form>
+							<div class="col-md-2">
+								<b>Convert</b>
+							</div>
+							<div class="col-md-3">
+								<input type="number" name="" id="numInput">
+							</div>
+							<div class="col-md-1">
+								<select id="typeConv">
+									<option value="lb">lb To Kg</option>
+									<option value="kg">Kg To lb</option>
+								</select>
+							</div>
+							<div class="col-md-1">
+								<input type="button" onclick="convert()" value="Submit" name="">
+							</div>
+							<div class="col-md-3">
+								<span id="convResult"></span>
+							</div>
+						</form>
+						
+					</div>
+					
+					
+				</dir>
+				<dir id="Task3" class="tabcontent">
+					<div class="assignment-body">
+						<form>
+							
+							<table>
+								<tr>
+									<th><p>Input series of numbers</p></th>
+									<td>
+										<input type="text" name="" id="seriesInput">
+										<input type="button" name="" onclick="sum_max_min()" value="Submit">
+									</td>
+								</tr>
+								<tr>
+									<th>Maximum</th>
+									<td><span id="maxVal">0</span></td>
+								</tr>
+								<tr>
+									<th>Minimum</th>
+									<td><span id="minVal">0</span></td>
+								</tr>
+								<tr>
+									<th>Sum</th>
+									<td><span id="sumVal">0</span></td>
+								</tr>
+								<tr>
+									<th>Average</th>
+									<td><span id="avgVal">0</span></td>
+								</tr>
+								<tr>
+									<th>Reverse</th>
+									<td><span id="reverseVal">0</span></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+					
+				</dir>
+				<dir id="Task4" class="tabcontent">
+					<h3>Magic!!</h3>
+					<div class="assignment-body">
+						<div id="magicShow">
+							<ul id="magicList">
+								<li>kitkat</li>
+								<li>Cadbury</li>
+								<li>oreo</li>
+								<li>strawberry jam</li>
+								<li>Tensor Flow</li>
+								<li>Raspberry Pie</li>
+							</ul>
+						</div>
+					</div>
+					<div class="assignment-footer">
+						<button onclick="magic_clear()">Clear It</button>
+						<button onclick="magic_cap()">Capitalize</button>
+						<button onclick="magic_sort()">Sort</button>
+						<button onclick="magic_reverse()">Reverse</button>
+						<button onclick="magic_add_num()">Add Number </button>
+						<button onclick="magic_strip()">Strip Blank</button>
+						<button onclick="magic_shuffle()">Shuffle</button>
+					</div>
+					
+				</dir>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

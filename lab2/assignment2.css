@@ -1,0 +1,9 @@
+.assignment-body{
+	min-height: 350px;
+	background-color: inherit;
+}
+.assignment-footer{
+	min-height: 75px;
+	background-color: #33373D;
+	color: white;
+}

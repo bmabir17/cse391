@@ -1,0 +1,43 @@
+.glass{
+	/* background styles */
+	position: relative;
+	display: inline-block;
+	
+	background-color: green; /*for compatibility with older browsers*/
+	
+	/* text styles */
+	text-decoration: none;
+	color: #fff;
+	
+	font-family: sans-serif;
+	font-weight: 100;
+}
+.nav-li{
+	display: inline-block;
+	float:right;
+
+
+}
+.nav-ul{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #33373D;
+}
+.nav-a{
+	display: block;
+	color: gray;
+	padding: 14px 16px;
+	background-color: #33373D;
+	text-align: center;
+	text-decoration: none;
+}
+.nav-li a:hover{
+	background-color: #cc5556;
+	color: white;
+}
+.active {
+    background-color: #BA4B4B;
+    color: white;
+}
