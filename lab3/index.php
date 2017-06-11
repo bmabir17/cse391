@@ -31,20 +31,11 @@ if(!empty($_GET)){ //If there is a GET data available, it means the form is used
 }
 ?>
 
-<html>
-<head>
-    <title>Form</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-            crossorigin="anonymous"></script>
 
-</head>
-<body>
+<?php
+    require '../include/header.php';
+    require '../include/navBar.php' ;
+?>
 <div class="container">
     <div class="col-md-3">
 
@@ -124,9 +115,13 @@ if(!empty($_GET)){ //If there is a GET data available, it means the form is used
                 </script>
             </div>
             <button type="submit" class="btn btn-default" onclick="phoneFlag.disabled=false;" value="<?php echo isset($submit) ? $submit:'regSubmit';?>" name="regButton">Submit</button> <!-- To submit the info's as a new appointment info or update existing appointment -->
-
+            <a href="admin.php" class="btn btn-primary" role="button" style="margin-left: 60%;">Admin Panel login</a>
 
         </form>
+    </div>
+    <div class="col-md-3">
+
+
     </div>
 </div>
 </body>

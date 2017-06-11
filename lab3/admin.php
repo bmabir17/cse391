@@ -8,6 +8,8 @@
 </head>
 
 <body>
+<?php require '../include/library.php'; ?>
+<?php require '../include/navBar.php'; ?>
 <div class="container">
     <div class="col-md-2">
 
