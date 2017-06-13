@@ -17,7 +17,7 @@
         //echo "connected to db";
         //$getMechSql="SELECT `mechName`,`mechId`  FROM `mechanic` WHERE 1";
         //$getMechSql="SELECT  `mechanic`.`mechName`,`mechanic`.`mechId`,COUNT(`mechanic`.`mechId`) as numOfAppointment FROM `mechanic` LEFT JOIN `appointment` ON (`mechanic`.`mechId` = `appointment`.`mechId`) GROUP BY `mechanic`.`mechId`";
-        $getMechSql="SELECT `mechanic`.`mechName`,`mechanic`.`mechId`,`sub`.`date`,COUNT(`mechanic`.`mechId`) as `numOfAppointment` FROM `mechanic` LEFT JOIN (SELECT * FROM `appointment` WHERE `date`='$dateValue')sub ON (`mechanic`.`mechId` = sub.`mechId`) GROUP BY `mechanic`.`mechId`";
+        $getMechSql="SELECT `mechanic`.`mechName`,`mechanic`.`mechId`,`sub`.`date`,COUNT(`sub`.`date`) as `numOfAppointment` FROM `mechanic` LEFT JOIN (SELECT * FROM `appointment` WHERE `date`='$dateValue')sub ON (`mechanic`.`mechId` = sub.`mechId`) GROUP BY `mechanic`.`mechId`";
         $getMechSqlQuery=mysqli_query($con,$getMechSql);
         //echo $getMechSqlQuery;
         if( mysqli_num_rows($getMechSqlQuery)){ //check if there is result for the mysqli query
@@ -25,7 +25,7 @@
             //echo "in condition";
             while ($res=mysqli_fetch_array($getMechSqlQuery)){ //for every mechanic loop through the sql results
                 if($res['numOfAppointment']<4){ //if a certain mechanic has jobs more than 4, he will not be shown in the available list
-                    $select.='<option value="'.$res['mechId'].'">'.$res['mechName']." - has ".(((int)$res['numOfAppointment'])-1)." Jobs".'</option>';
+                    $select.='<option value="'.$res['mechId'].'">'.$res['mechName']." - has ".((int)$res['numOfAppointment'])." Jobs".'</option>';
                     //echo $res['mechName'];
                 }
             }
