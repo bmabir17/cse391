@@ -1,0 +1,56 @@
+#head-search{
+	margin-top:1%;
+	width: 90%;
+	margin-left: 1%;
+	margin-right: 0px;
+	margin-bottom: 2%;
+
+}
+#img-user-icon{
+	width: 30%;
+	margin-left: 50%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	border-radius: 50% !important;
+}
+.container-fluid{
+	margin: 0px;
+	padding: 0px;
+}
+.form-control{
+	margin-right: 10%;
+}
+.div-class{
+	width: 70%;
+}
+.btn-new{
+	width: 60%;
+	margin-bottom: 7%;
+}
+
+.btn-circle, .btn-circle-3d{
+  border-radius: 50% !important;
+  
+}
+.btn-align{
+	align:right;
+}
+.btn-no-border{
+	border: none;
+  	outline: none;
+}
+.left-panel{
+	min-height: 100%;
+}
+.sort-btn{
+	margin-bottom: 10%;
+}
+.file-btn{
+	min-width: 100%;
+	margin-bottom: 10%;
+}
+
+.folder-space{
+	height: 100%;
+	width: 100%;
+}
