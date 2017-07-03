@@ -9,6 +9,12 @@ use App\User;
 class RegistrationController extends Controller
 {
     //
+    public function __construct()
+    {
+        //Authenticated users will be redirected to /fileView
+        $this->middleware('guest');
+    }
+
     public function index(){
 
     }

@@ -1,5 +1,6 @@
 @extends('layout.layout')
 
 @section('content')
-    asfasfasf
+    @include('vendor.laravel-filemanager.index')
 @endsection
+

@@ -12,8 +12,8 @@
     <body>
         @include('layout.top_nav')
         <div class="container">
-            @include('layout.tree_nav')
-            @include('layout.folder_view')
+
+            @yield('content')
         </div>
 
         <div>

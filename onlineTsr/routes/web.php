@@ -28,11 +28,12 @@ Route::get('/', function () {
 });
 */
 
+
 Route::get('/post','PostController@index');
 Route::get('/tasks/', 'TasksController@index');
 Route::get('/tasks/{id}','TasksController@show');
 
-
+Route::get('/lfm','fileViewController@show');
 Route::get('/fileView','fileViewController@index')->name('home');
 
 Route::get('/registration','RegistrationController@create');
@@ -43,6 +44,7 @@ Route::get('/','SessionController@index')->name('start');
 Route::get('/login',['as' => 'login', 'uses' => 'SessionController@create']);
 Route::post('/login','SessionController@store');
 Route::get('/logout','SessionController@destroy');
+
 
 
 Route::get('/tsr', function () {

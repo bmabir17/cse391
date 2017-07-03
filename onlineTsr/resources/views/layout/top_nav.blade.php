@@ -15,6 +15,7 @@
                 @endif
             </div>
         </div>
+        <!--
         <div class="col-md-12">
             <div class="col-md-2">
                 <button class="btn btn-primary btn-new" title="Make new File and folder"> New </button>
@@ -43,6 +44,7 @@
             </div>
 
         </div>
+        -->
 
     </nav>
 </div>

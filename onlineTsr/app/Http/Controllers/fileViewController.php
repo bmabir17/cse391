@@ -19,6 +19,7 @@ class fileViewController extends Controller
     }
     public function __construct() //Only allow signed in user to access all the views controller by this controller
     {
+        //UnAuthenticated users will be redirected to /
         $this->middleware('auth');
     }
 
@@ -49,9 +50,10 @@ class fileViewController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
         //
+        return view('vendor.unisharp.laravel-filemanager.index');
     }
 
     /**

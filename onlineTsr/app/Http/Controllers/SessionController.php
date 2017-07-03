@@ -13,7 +13,8 @@ class SessionController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest') -> except(['destroy','index']); //only guests are going to see the signin page
+        //Authenticated users will be redirected to /fileView
+        $this->middleware('guest') -> except(['destroy']); //only guests are going to see the signin page
     }
 
     public function index()
@@ -50,6 +51,7 @@ class SessionController extends Controller
                 'message' => 'Please give valid email or password'
             ]); //Redirects to the page it was before
         }
+        //return redirect('/laravel-filemanager?type=image#');
         return redirect()->home();
     }
 

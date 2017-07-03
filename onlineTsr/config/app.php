@@ -167,7 +167,10 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
-
+        TalvBansal\MediaManager\Providers\MediaManagerServiceProvider::class, //Added by bmabir
+        Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class, //Added by bmabir
+        Intervention\Image\ImageServiceProvider::class,                       //Added by bmabir
+        //Spatie\MediaLi
         /*
          * Application Service Providers...
          */
@@ -208,6 +211,7 @@ return [
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
+        'Image' => Intervention\Image\Facades\Image::class, //Added by bmabir
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
